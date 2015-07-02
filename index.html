@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Demo</title>
+    <style>
+        .CC{float: left;margin: 10px}
+        .PTYXPager{clear:both}
+        .SelectA{color: red}
+    </style>
+
+</head>
+<body>
+<div class="demo">
+    <div class="PTYXContent" id="listContainer">
+    </div>
+    <div class="BlankClear"></div>
+    <div class="PTYXPager" id="pagerContainer">
+    </div>
+
+    <hr/>
+
+    <div class="PTYXContent" id="listContainer1">
+    </div>
+    <div class="BlankClear"></div>
+    <div class="PTYXPager" id="pagerContainer1">
+    </div>
+</div>
+<script src="jquery.min.js"></script>
+<script src="gamePager.js"></script>
+<script>
+    //gamePager.js依赖jQuery，所以必须先引入jQuery1.8以上版本
+    //引入gamePager.js后，调用pager.render方法，第一个参数是json文件，和对应的页面中放“游戏列表”和“页数”的元素的id；可在js文件中修改每页显示的游戏数量
+    //json格式说明：“PT”和“Name”是页面中对应元素的class，注意大小写一致，他们的值就是div中显示的文本
+    pager.render("pager.json","listContainer","pagerContainer");
+    pager.render("pager2.json","listContainer1","pagerContainer1");
+</script>
+</body>
+</html>
+
+
+<!--<div class="CC">-->
+<!--<a href="http://v.youku.com/v_show/id_XOTI2OTkzNzg4.html?f=23683491"><img src="http://r4.ykimg.com/051000005530AAB767BC3D656B0974CB"></a>-->
+<!--<div class="PT">平台：PS4</div>-->
+<!--<div class="Name">血源诅咒-Bloodborne</div>-->
+<!--</div>-->
+<!--<div class="CC">-->
+<!--<a href="http://v.youku.com/v_show/id_XODMxNjE0NDY0.html?f=23683569"><img src="http://r1.ykimg.com/051000005530B82867BC3D611B05A202"></a>-->
+<!--<div class="PT">平台：PS4</div>-->
+<!--<div class="Name">GTA5</div>-->
+<!--</div>-->
+<!--<div class="CC">-->
+<!--<a href="http://v.youku.com/v_show/id_XNzQ5Nzc3OTY0.html?f=23679769"><img src="http://r4.ykimg.com/051000005530B98367BC3D7525006420 "></a>-->
+<!--<div class="PT">平台：PS4</div>-->
+<!--<div class="Name">最后生还者</div>-->
+<!--</div>-->
+<!--<div class="CC">-->
+<!--<a href="http://v.youku.com/v_show/id_XNzg0NDIzOTky.html?f=23679755"><img src="http://r2.ykimg.com/051000005530BA5967BC3D654601BF0A"></a>-->
+<!--<div class="PT">平台：PS4</div>-->
+<!--<div class="Name">NBA 2K15</div>-->
+<!--</div>-->
+<!--<div class="CC">-->
+<!--<a href="http://v.youku.com/v_show/id_XODIyMjk0NjQ4.html?f=23679743"><img src="http://r1.ykimg.com/051000005530BB1F67BC3D5D9409EE16"></a>-->
+<!--<div class="PT">平台：PS4</div>-->
+<!--<div class="Name">FIFA 2015</div>-->
+<!--</div>-->
+<!--<div class="CC">-->
+<!--<a href="http://v.youku.com/v_show/id_XOTAxMzgzMzYw.html?f=23679727"><img src="http://r3.ykimg.com/051000005530BBF667BC3D58FF0B9CCC"></a>-->
+<!--<div class="PT">平台：PS4</div>-->
+<!--<div class="Name">如龙0誓言之地</div>-->
+<!--</div>-->
+<!--<!--第二排-->-->
+<!--<div class="CC">-->
+<!--<a href="http://v.youku.com/v_show/id_XNzI0MjEzODEy.html?f=23679704"><img src="http://r4.ykimg.com/051000005530BCDF67BC3D1EF3009A94"></a>-->
+<!--<div class="PT">平台：PS4</div>-->
+<!--<div class="Name">刺客信条：大革命</div>-->
+<!--</div>-->
+<!--<div class="CC">-->
+<!--<a href="http://v.youku.com/v_show/id_XNTg1OTM5MDUy.html?f=23679668"><img src="http://r1.ykimg.com/051000005530BD5467BC3D637D05602F "></a>-->
+<!--<div class="PT">平台：PS4</div>-->
+<!--<div class="Name">极品飞车18：宿敌</div>-->
+<!--</div>-->
+<!--<div class="CC">-->
+<!--<a href="http://v.youku.com/v_show/id_XNzA2NjEyNTY4.html?f=23679655"><img src="http://r3.ykimg.com/051000005530BDCA67BC3D604E0ED448"></a>-->
+<!--<div class="PT">平台：PS4</div>-->
+<!--<div class="Name">使命召唤11：高级战争</div>-->
+<!--</div>-->
+<!--<div class="CC">-->
+<!--<a href="http://v.youku.com/v_show/id_XNzI0MTg5MzQ4.html?f=23679524"><img src="http://r4.ykimg.com/051000005530BEBF67BC3D65D6081910"></a>-->
+<!--<div class="PT">平台：PS4</div>-->
+<!--<div class="Name">教团：1886</div>-->
+<!--</div>-->
+<!--<div class="CC">-->
+<!--<a href="#"><img src=""></a>-->
+<!--<div class="PT">平台：PS4</div>-->
+<!--<div class="Name">疯狂的麦克斯</div>-->
+<!--</div>-->
+<!--<div class="CC">-->
+<!--<a href="#"><img src=""></a>-->
+<!--<div class="PT">平台：PS4</div>-->
+<!--<div class="Name">无主之地：英俊合集</div>-->
+<!--</div>-->
